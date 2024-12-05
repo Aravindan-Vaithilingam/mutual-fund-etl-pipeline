@@ -14,7 +14,7 @@ BUCKET_NAME = os.getenv('BUCKET_NAME')
 KEY_PREFIX = os.getenv('KEY_PREFIX')
 athena_client = boto3.client('athena')
 sqs_client = boto3.client('sqs')
-queue_url = "https://sqs.ap-south-1.amazonaws.com/642484605414/mutual-fund-historical-data-crawl-schemes"
+queue_url = "https://sqs.ap-south-1.amazonaws.com/xxxxxxxxx/mutual-fund-historical-data-crawl-schemes"
 
 def lambda_handler(context, event):
 

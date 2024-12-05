@@ -15,7 +15,7 @@ BUCKET_NAME = os.getenv('BUCKET_NAME') or 'aravindan-dev-space'
 KEY_PREFIX = os.getenv('KEY_PREFIX') or 'mutual-fund-data-pipeline/nav_history_raw/to_processed'
 athena_client = boto3.client('athena')
 sqs_client = boto3.client('sqs')
-queue_url = os.getenv('QUEUE_URL') or "https://sqs.ap-south-1.amazonaws.com/642484605414/mutual-fund-historical-data-crawl-schemes"
+queue_url = os.getenv('QUEUE_URL') or "https://sqs.ap-south-1.amazonaws.com/xxxxxxxxxxx/mutual-fund-historical-data-crawl-schemes"
 nav_history_api = 'https://api.mfapi.in/mf/{}'
 nav_live_api = 'https://api.mfapi.in/mf/{}/latest'
 
